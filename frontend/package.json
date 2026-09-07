@@ -1,0 +1,36 @@
+{
+  "name": "sahakari-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "desktop:cashier": "cross-env SAHAKARI_DESKTOP_ROLE=cashier SAHAKARI_LOAD_DIST=1 electron electron/main.cjs",
+    "desktop:manager": "cross-env SAHAKARI_DESKTOP_ROLE=manager SAHAKARI_LOAD_DIST=1 electron electron/main.cjs",
+    "desktop:accountant": "cross-env SAHAKARI_DESKTOP_ROLE=accountant SAHAKARI_LOAD_DIST=1 electron electron/main.cjs",
+    "desktop:admin": "cross-env SAHAKARI_DESKTOP_ROLE=admin SAHAKARI_LOAD_DIST=1 electron electron/main.cjs",
+    "desktop:dev:cashier": "cross-env SAHAKARI_DESKTOP_ROLE=cashier electron electron/main.cjs",
+    "desktop:dev:manager": "cross-env SAHAKARI_DESKTOP_ROLE=manager electron electron/main.cjs",
+    "desktop:dev:accountant": "cross-env SAHAKARI_DESKTOP_ROLE=accountant electron electron/main.cjs",
+    "desktop:dev:admin": "cross-env SAHAKARI_DESKTOP_ROLE=admin electron electron/main.cjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-router-dom": "^5.3.3",
+    "cross-env": "latest",
+    "electron": "latest",
+    "react-router-dom": "^7.18.0",
+    "recharts": "^3.9.0"
+  }
+}

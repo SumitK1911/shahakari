@@ -1,0 +1,19 @@
+To enable real WhatsApp sending later:
+Go to integrations API/admin config.
+Set dry_run to false.
+Add Meta WhatsApp phone_number_id.
+Add Meta access token.
+Use approved templates if sending business-initiated reminders.
+Files changed:
+backend/app/services/notifications.py
+backend/app/api/notifications.py
+backend/app/schemas.py
+backend/app/seed.py
+backend/app/worker.py
+Verified:
+Backend compile passes.
+Local DB bootstrap completed successfully.
+Sources checked:
+WhatsApp Business Platform / Cloud API overview
+WhatsApp messages API reference
+WhatsApp Business Platform pricing

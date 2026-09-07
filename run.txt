@@ -1,0 +1,18 @@
+To run locally for debugging:
+
+cd "C:\Users\Sumit Khabza\Desktop\sahakari"
+docker compose up postgres redis
+Backend terminal:
+
+cd "C:\Users\Sumit Khabza\Desktop\sahakari\backend"
+.\.venv\Scripts\activate
+python -m app.bootstrap
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+Frontend terminal:
+
+cd "C:\Users\Sumit Khabza\Desktop\sahakari\frontend"
+npm run dev
+Open:
+
+Frontend: http://localhost:5173
+API docs: http://localhost:8000/docs

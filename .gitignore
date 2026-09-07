@@ -1,0 +1,32 @@
+# Backend
+backend/env/
+backend/venv/
+backend/.venv/
+backend/.env
+backend/__pycache__/
+backend/*.log
+backend/backups/
+backend/generated_reports/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/electron-runtime/
+frontend/release/
+frontend/out/
+
+# Environment examples should NOT be ignored
+!backend/.env.example
+!backend/.env.local.example
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

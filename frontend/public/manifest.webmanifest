@@ -1,0 +1,19 @@
+{
+  "name": "Sahakari Field Collection",
+  "short_name": "Sahakari",
+  "description": "Offline-capable cooperative field collection workspace",
+  "start_url": "/?desktopRole=admin",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f3f6f8",
+  "theme_color": "#126c43",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

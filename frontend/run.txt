@@ -1,0 +1,4 @@
+npm run desktop:cashier
+npm run desktop:manager
+npm run desktop:accountant
+npm run desktop:admin
